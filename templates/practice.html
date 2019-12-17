@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clothes</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="theme.css">
+  <style>
+    body{
+        background-image: url('https://t1.daumcdn.net/cfile/tistory/9942B54A5C09034427');
+      }
+  </style>
+</head>
+<body>
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/analysis">Home</a></li>
+                <li class="breadcrumb-item"><a href="/result">Result</a></li>
+                <li class="breadcrumb-item active" aria-current="page">musinsa</li>
+            </ol>
+    </nav>
+    
+    <!-- Breadcrumb -->
+    <section id="forms" class="py-3">
+            <div class="row">
+            <div class="col-md-12">
+            <h1>분석 검색검색</h1>
+                    <!-- <li><input type = 'text' name = 'col1'></li>
+                    <li><input type = 'text' name = 'col2'></li>
+                    <li><input type = 'text' name = 'col3'></li>
+                    <li><input type = 'text' name = 'col4'></li>
+                    <li><input type = 'text' name = 'col5'></li>
+                    <li><input type = 'text' name = 'col6'></li>
+                    <li><input type = 'text' name = 'col7'></li>
+                    <input type = 'submit' value = "분석"> -->
+            <form action = '/result'>
+                <ul>
+                    <!-- 분석대상A -->
+
+                <!-- <div class="analsis1">
+                    <div class="col-12 py-4">
+                        <button class="btn btn-secondary mr-1 mb-1" href="#">분석A</button>
+                    </div>
+                    <select id="browsers" name="browsers">
+                        <option name="name">별점</option>
+                        <option name="deli">배송기간</option>
+                        <option name="like">좋아요</option>
+                    </select>
+            </div> -->
+
+                <div class="select">
+                <h1>선택해도 아무의미없다</h1>
+                <label><input type="radio" name="star" value="star"> 별점</label><br>
+                <label><input type="radio" name="star" value="like"> 좋아요</label><br>
+                <label><input type="radio" name="star" value="deli"> 배송일</label><br>
+                </div>
+
+                <form action="/pong" method = "post">
+                    별점 
+                    <input type="text" name="star">
+                    배송일 
+                    <input type="text" name="deli">
+                    좋아요 
+                    <input type="text" name="like">
+                    <input type = 'submit' value = "분석">
+                </form>
+
+                    <!-- <div class="col-12 py-4">
+                        <button class="btn btn-secondary mr-1 mb-1" href="#">분석B</button>
+                    </div>
+                    <select id="browsers" name="browsers">
+                        <option value="별점" name="name">별점</option>
+                        <option value="배송기간" name="deli">배송기간</option>
+                        <option value="좋아요" name="like">좋아요</option>
+                    </select> -->
+
+                    <!-- <% action = Request.QueryString("action") %>
+
+                    <form name="contentchanger" action="/" method="post">
+                    <select name="flag" name="flag">
+                        <option value="Choose" selected="selected">Choose</option>
+                        <option value="italian" onclick="what code i should use here?">Italian</option>
+                    </select>
+                    </form>
+                    <a href="?action=FR">FR</a>
+                    <a href="?action=IT">IT</a>
+                
+                    <%
+                    if action = "IT" Then  
+                      Response.Write("<p>This is italian</p>") 
+                    else if  action = "FR" Then  
+                      Response.Write("<p>This is French</p>") 
+                    end if
+                    end if
+                    %> -->
+
+                    <!-- <input type="hidden" name="hid" value="서버로 넘길 값"> -->
+
+                    <!-- <select name="a1">
+                            <option value="designer">디자이너</option>       
+                            <option value="programmer">프로그래머</option>     
+                            <option value="planner">기획자</option>
+                    </select> -->
+
+                    <!-- <input type='button' 
+                    value='클릭해보세요' 
+                    onclick='alert("안녕하세요")'/> -->
+            </div>
+            </form>
+            <form action = '/result'>
+                <!-- 분석대상B -->
+            <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        분석B
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" name="star">별점</a>
+                        <a class="dropdown-item" name="deli">배송기간</a>
+                        <a class="dropdown-item" name="like">좋아요 등</a>
+                    </div>
+            </div>
+            <input type = 'submit' value = "분석">
+                </ul>
+            </form>
+
+
+
+</div>
+
+</div>
+</section>
+
+</div>
+</div>
+</section>
+
+<section id="forms" class="py-3">
+<div class="row">
+<div class="col-md-12">
+<h4>Forms and Inputs</h4>
+
+    <div class="form-group row">
+        <label class="col-lg-2 col-form-label form-control-label text-muted">Address</label>
+        <div class="col-lg-10">
+            <input class="form-control" type="text" placeholder="Street">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-lg-2 col-form-label form-control-label text-muted"></label>
+        <div class="col-lg-6">
+            <input class="form-control" type="text" placeholder="City">
+        </div>
+        <div class="col-lg-4">
+            <select class="form-control">
+                <option>State</option>
+                <option>AK</option>
+                <option>AZ</option>
+                <option>CA</option>
+                <option>CO</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group row was-validated">
+        <label class="col-lg-2 col-form-label form-control-label text-muted">Username</label>
+        <div class="col-lg-10">
+            <input class="form-control" type="text" required="">
+            <div class="invalid-feedback">
+                Username is required.
+            </div>
+        </div>
+    </div>
+    
+    <div class="form-group row">
+        <label class="col-lg-2 col-form-label form-control-label"></label>
+        <div class="col-lg-10">
+            <input type="reset" class="btn btn-outline-secondary mr-2" value="Cancel">
+            <input type="button" class="btn btn-primary mr-2" value="Submit">
+        </div>
+    </div>
+</form>
+
+</div>
+</div>
+</section>
+
+<section id="more" class="py-2">
+<div class="row">
+<div class="col-md-12">
+<div class="table-responsive">
+    <table class="table table-hover table-sm">
+  <tbody>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<!-- 별  점 <input type="text" name="star" placehoder="입력하세요"><br>
+배송일 <input type="text" name="deli" placehoder="입력하세요"><br>
+좋아요 <input type="text" name="like" placehoder="입력하세요"><br><br> -->
+
+    <!-- <section id="forms" class="py-3">
+            <div class="row">
+            <div class="col-md-12">
+                <h1>분석 검색검색</h1>
+            </div>
+            <div class="thumbnail-wrapper">
+                <div id="content">
+                    <form action = '/result'>
+                        <div class="container">
+                            <div class="row">
+                                <div class="card col-lg-12 col-sm-12">
+                                    <div id= "card-b" class="card-body">
+                                        <p class="card-text">col1 <input type="text" name="col1" placehoder="입력하세요"><br><br></p>
+                                        <p class="card-text">col2 <input type="text" name="col2" placehoder="입력하세요"><br><br></p>
+                                        <p class="card-text">col3 <input type="text" name="col3" placehoder="입력하세요"><br><br></p>
+                                        <p class="card-text">col4 <input type="text" name="col4" placehoder="입력하세요"><br><br></p>
+                                        <p class="card-text">col5 <input type="text" name="col5" placehoder="입력하세요"><br><br></p>
+                                        <input type = 'reset' value = "재입력">
+                                        <input type = 'submit' value = "분석">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </section> -->
+
+    <!-- background-repeat: no-repeat; -->

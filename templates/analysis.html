@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clothes</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="theme.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  <style>
+    .selector img{
+        position: absolute; top: 0; left: 0; width: 100%; height: 100%
+    }
+    p {
+        color: rgb(105, 18, 40);
+    }
+    h1 {color: rgb(105, 18, 40); font-size:4em; font-weight:bold; text-align: center;}
+    #card-b {
+    background-image: url('https://trello-attachments.s3.amazonaws.com/5ddcb5d4432b900e3543ab90/5df8b40ce61f778b68ad70fe/8205b0d85bf6f25611bd1ca8fe0255c3/philipp-berndt-5i0GnoTTjSE-unsplash.jpg');
+    background-position: center;
+    background-size: contain;
+    text-align: center; font-size: 31px;
+    }
+    .card-text{
+        text-align: center;
+    }
+    #container {
+        color: rgb(105, 18, 40); font-size: 50px; display: inline-block; width: 50%; border: 30px solid rgb(105, 18, 40);   
+    }
+    body{
+        background-color: rgb(255, 255, 255);
+    }
+  </style>
+</head>
+<body>
+    <!-- 맨 위에 breadcrumb -->
+    <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/analysis">Home</a></li>
+                <li class="breadcrumb-item"><a href="/result">Result</a></li>
+                <li class="breadcrumb-item active" aria-current="page">musinsaaaa</li>
+            </ol>
+    </nav>
+
+    <!-- title -->
+            <div id="h1" class="col-md-12">
+                <h1>분석 검색검색</h1>
+            </div>
+
+    <!-- 입력값 받는 div -->
+    <form action = '/result'>
+        <div class="container">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="card col-lg-12 col-sm-12">
+                        <div id= "card-b" class="card-body">
+                            <p class="card-text">col1　<input type="number" name="col1" placeholder="숫자입력"><br></p>
+                            <p class="card-text">col2　<input type="number" name="col2" placeholder="숫자입력"><br></p>
+                            <p class="card-text">col3　<input type="text" name="col3" placeholder="입력좀"><br></p>
+                            <p class="card-text">col4　<input type="text" name="col4" placeholder="생략ㄴ"><br></p>
+                            <p class="card-text">col5　<input type="text" name="col5" placeholder="사실생략가능"><br></p><br><br>
+                            <input type = 'reset' value = "재입력">
+                            <input type = 'submit' value = "분석">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
