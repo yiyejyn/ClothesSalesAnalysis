@@ -1,3 +1,5 @@
+# 전현진, 이예진, 오민재 시작
+
 from flask import Flask, escape, request, render_template
 import random
 from bs4 import BeautifulSoup
@@ -56,3 +58,5 @@ def result():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+    # 전현진, 이예진, 오민재 끝
